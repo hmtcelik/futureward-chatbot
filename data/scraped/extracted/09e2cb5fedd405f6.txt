@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/faq/how-can-i-change-the-passport-inspection-location-or-gold-card-pick-up-location/",
+  "title": "How can I change the passport inspection location? | Taiwan Gold Card",
+  "content_hash": "4942c41d07af4fe528ec42f157db002dc41de8bae3f4ec0772370c5427611a7f",
+  "crawled_at": "2026-04-25T13:56:25.846734+00:00",
+  "content": "How can I change the passport inspection location?\nLogin to the Foreign Professionals\nOnline Application Platform\n→ Application → Apply to Change Passport Inspection or Card Collection Location.\nPlease note that:\nTo change to domestic review, you must first enter Taiwan before you can update on the system. (If you select domestic review without entering Taiwan, your application will be rejected due to a lack of entry records.)\nIf you have already completed the passport inspection, you can no longer change the card pickup location.\nYou can only change the passport verification location from abroad to within Taiwan once your application reaches the “Passport Verification” stage.\nPic1-Change Passport Inspection Location\nPic2-Type your Application No. and Date of Birth\nPic3-Have Not Reached the Passport Inspection Stage\nPic4-During the Passport Inspection Stage\nback"
+}

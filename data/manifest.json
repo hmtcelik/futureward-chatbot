@@ -1,0 +1,352 @@
+{
+  "https://goldcard.nat.gov.tw/en/": {
+    "content_hash": "556d1a65955e84735282b858fdf070c81a425b92fa7bd6f7edb4524326a15a89",
+    "last_crawled": "2026-04-25T13:56:27.020162+00:00",
+    "last_modified": "2026-04-25T13:54:37.190709+00:00",
+    "status": "active",
+    "title": "Official Website | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/about": {
+    "content_hash": "3f446168b51a33dbd234a84665dcf3e69484cf5c226670f1b7fd13c05494210d",
+    "last_crawled": "2026-04-25T13:56:27.020452+00:00",
+    "last_modified": "2026-04-25T13:54:37.580950+00:00",
+    "status": "active",
+    "title": "What is the Taiwan Employment Gold Card? | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/application/": {
+    "content_hash": "4a585394f09c7ba5673043c7a67b729518ca7fe67ab30a59103e2f8040d08b00",
+    "last_crawled": "2026-04-25T13:56:27.029087+00:00",
+    "last_modified": "2026-04-25T13:54:55.469402+00:00",
+    "status": "active",
+    "title": "Application Information | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/": {
+    "content_hash": "85a9d0f3de12078bf06a8b872ac1b80765ad6ec85a9a3da4b5750d3b632f663c",
+    "last_crawled": "2026-04-25T13:56:27.027767+00:00",
+    "last_modified": "2026-04-25T13:54:52.823870+00:00",
+    "status": "active",
+    "title": "Application Guide | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-1/": {
+    "content_hash": "e5ceb5ccc79ee8987a7f488b89f32d1becaccde6f958a35b1ecff02ad54bdcae",
+    "last_crawled": "2026-04-25T13:56:27.023894+00:00",
+    "last_modified": "2026-04-25T13:54:43.937442+00:00",
+    "status": "active",
+    "title": "Step 1 - Qualification Quick Check | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-2/": {
+    "content_hash": "22d43e526961cbe3d9bf71795edfe13b671645f2b6f4ade1953fea1bfe26b809",
+    "last_crawled": "2026-04-25T13:56:27.025418+00:00",
+    "last_modified": "2026-04-25T13:54:47.260557+00:00",
+    "status": "active",
+    "title": "Step 2 - Online Application | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-2/new-applicant/": {
+    "content_hash": "d37fdb2bac85f73fca7eb2c38be3da5cb928e8d951f8c4b76d9459ba022644c7",
+    "last_crawled": "2026-04-25T13:56:27.025832+00:00",
+    "last_modified": "2026-04-25T13:54:48.158599+00:00",
+    "status": "active",
+    "title": "New Applicant | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-2/profession-documents/": {
+    "content_hash": "3f7e9674a27acb8e16594c944e0d336257e4c2576cce5d78316a0a05d005de67",
+    "last_crawled": "2026-04-25T13:56:27.026857+00:00",
+    "last_modified": "2026-04-25T13:54:50.189042+00:00",
+    "status": "active",
+    "title": "Payment and E-Mail Confirmation | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-2/profession/": {
+    "content_hash": "92546d16141c827a9d27ede903178ea3e8361c7512ee5b0cbb4f7bfb854f88e3",
+    "last_crawled": "2026-04-25T13:56:27.026459+00:00",
+    "last_modified": "2026-04-25T13:54:49.317962+00:00",
+    "status": "active",
+    "title": "Profession | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-2/registration/": {
+    "content_hash": "6991a9db3cd60ccf2056c604cb379acc634332eadc12d1e7083fdf4de9b0f9e1",
+    "last_crawled": "2026-04-25T13:56:27.025600+00:00",
+    "last_modified": "2026-04-25T13:54:47.750686+00:00",
+    "status": "active",
+    "title": "Registration | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-2/resident/": {
+    "content_hash": "c8411740d588720484cbe1dc372ad065e863c9a1296e3088dc08ffc298dff852",
+    "last_crawled": "2026-04-25T13:56:27.026291+00:00",
+    "last_modified": "2026-04-25T13:54:48.948020+00:00",
+    "status": "active",
+    "title": "Resident | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-2/upload-document/": {
+    "content_hash": "a070b64d15ffe988d0c9990316c00a5b111587ef2b3a131986091e162c0f9c61",
+    "last_crawled": "2026-04-25T13:56:27.026659+00:00",
+    "last_modified": "2026-04-25T13:54:49.775183+00:00",
+    "status": "active",
+    "title": "Upload Document | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-2/your-data/": {
+    "content_hash": "efce193ea724c565a6df91c00e180c50435aaf530ac50091a7492dbb6ef306d6",
+    "last_crawled": "2026-04-25T13:56:27.026074+00:00",
+    "last_modified": "2026-04-25T13:54:48.520688+00:00",
+    "status": "active",
+    "title": "Basic Data | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-3/": {
+    "content_hash": "f76928810f250b7a6cf1816619c86e7b8fab4755f43874b7337c6bb1e091eb12",
+    "last_crawled": "2026-04-25T13:56:27.027022+00:00",
+    "last_modified": "2026-04-25T13:54:50.589480+00:00",
+    "status": "active",
+    "title": "Step 3 - After Application | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-3/card-collection/": {
+    "content_hash": "0502a542dccbef479b72e8d295a4874fbd1a63fa2314905907b48ec9d9a8e015",
+    "last_crawled": "2026-04-25T13:56:27.027480+00:00",
+    "last_modified": "2026-04-25T13:54:52.048682+00:00",
+    "status": "active",
+    "title": "Card Collection | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-3/passport-verification/": {
+    "content_hash": "d56454f37df395b1f38e751b455908d4137cffe3fd3ef71e5849c3ae848fff68",
+    "last_crawled": "2026-04-25T13:56:27.027329+00:00",
+    "last_modified": "2026-04-25T13:54:51.625415+00:00",
+    "status": "active",
+    "title": "Passport Inspection | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-3/supplementary-documents/": {
+    "content_hash": "7b6bd5baf7dbd9ad201e28ad28fe4b1a9c60da2d799148565828e8e4e058a50f",
+    "last_crawled": "2026-04-25T13:56:27.027177+00:00",
+    "last_modified": "2026-04-25T13:54:51.123390+00:00",
+    "status": "active",
+    "title": "Supplementary Documents | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/apply/step-3/welcome-to-the-community/": {
+    "content_hash": "2f58db722d15a927af1d2da14fadc94ddd27fcf616a80c8a52c71c349b1c045f",
+    "last_crawled": "2026-04-25T13:56:27.027639+00:00",
+    "last_modified": "2026-04-25T13:54:52.453144+00:00",
+    "status": "active",
+    "title": "Welcome to the Community | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/do-hong-kong-and-macao-applicants-need-to-attach-any-additional-documents/": {
+    "content_hash": "7009ed9f15e32ad9cdbbc975b58d45544e30ee71f5480566c40a7976d48520ff",
+    "last_crawled": "2026-04-25T13:56:27.029450+00:00",
+    "last_modified": "2026-04-25T13:54:56.303065+00:00",
+    "status": "active",
+    "title": "Do Hong Kong and Macau applicants need to attach any \u2026 | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/do-i-need-to-provide-a-letter-of-guarantee-to-apply-for-the-gold-card/": {
+    "content_hash": "293108b98a37a03c8683574199000bc14a45e121390cb25bd4a3990be0ad9625",
+    "last_crawled": "2026-04-25T13:56:27.029763+00:00",
+    "last_modified": "2026-04-25T13:54:57.155785+00:00",
+    "status": "active",
+    "title": "Do I need to provide a Letter of Guarantee to apply for the \u2026 | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/how-can-i-change-the-passport-inspection-location-or-gold-card-pick-up-location/": {
+    "content_hash": "4942c41d07af4fe528ec42f157db002dc41de8bae3f4ec0772370c5427611a7f",
+    "last_crawled": "2026-04-25T13:56:27.030392+00:00",
+    "last_modified": "2026-04-25T13:54:58.697156+00:00",
+    "status": "active",
+    "title": "How can I change the passport inspection location? | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/how-do-i-change-to-another-field/": {
+    "content_hash": "d1d16439140dc0136b13573426f4a1229793628535755ad0441db7db0dede5fd",
+    "last_crawled": "2026-04-25T13:56:27.030207+00:00",
+    "last_modified": "2026-04-25T13:54:58.325347+00:00",
+    "status": "active",
+    "title": "How do I change to another Field? | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/how-do-i-fill-in-my-residence-address/": {
+    "content_hash": "3f90497d4810b703d1e99dad66e56a0fa78152d7ee58041cfef6612d83a7fdc9",
+    "last_crawled": "2026-04-25T13:56:27.029295+00:00",
+    "last_modified": "2026-04-25T13:54:55.924360+00:00",
+    "status": "active",
+    "title": "How do I fill in my residence address? | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/how-do-i-meet-the-salary-requirements-of-the-gold-card-application/": {
+    "content_hash": "57d516f9c8ee5d63c54c7e642af6ab38fb0723db8dcf2b95f532638b688d42ed",
+    "last_crawled": "2026-04-25T13:56:27.025139+00:00",
+    "last_modified": "2026-04-25T13:54:46.502762+00:00",
+    "status": "active",
+    "title": "How do I meet the salary requirements of the Gold Card \u2026 | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/how-long-does-the-application-take/": {
+    "content_hash": "1e34ae5a70f315c6df46c3e8754205cc69fdf1e2e038183bf7ecd0e7629765ae",
+    "last_crawled": "2026-04-25T13:56:27.028560+00:00",
+    "last_modified": "2026-04-25T13:54:54.484720+00:00",
+    "status": "active",
+    "title": "How long does the application take? | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/how-to-upload-supplementary-documents/": {
+    "content_hash": "c4b2372582b020345fffab3855d47acc917ead537e25cc696f5f69469f654cb6",
+    "last_crawled": "2026-04-25T13:56:27.030063+00:00",
+    "last_modified": "2026-04-25T13:54:57.916563+00:00",
+    "status": "active",
+    "title": "How to upload supplementary documents? | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/if-i-cannot-personally-pick-up-my-gold-card-can-i-ask-someone-to-pick-it-up-for-me/": {
+    "content_hash": "f0d0e379aae41f2ef4c243cca74654deb280fee7cf4ec59a9921b8b5fd6e8bb6",
+    "last_crawled": "2026-04-25T13:56:27.030574+00:00",
+    "last_modified": "2026-04-25T13:54:59.135457+00:00",
+    "status": "active",
+    "title": "If I cannot personally pick up my Gold Card, can I ask \u2026 | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/what-documents-do-i-need-to-provide-if-i-was-born-in-mainland-china/": {
+    "content_hash": "1201d57757c8878a8a22f266f37222a7b7d1eef833bc79a445c34a2977e4b3f5",
+    "last_crawled": "2026-04-25T13:56:27.029602+00:00",
+    "last_modified": "2026-04-25T13:54:56.682686+00:00",
+    "status": "active",
+    "title": "What documents do I need to provide if I was born in \u2026 | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/what-is-proof-of-domestic-or-foreign-service/": {
+    "content_hash": "599d4ec1cf813152da3ad2c5e3d9bfae66532fa6ba4469b6d60552b3884758c1",
+    "last_crawled": "2026-04-25T13:56:27.024967+00:00",
+    "last_modified": "2026-04-25T13:54:46.066839+00:00",
+    "status": "active",
+    "title": "What is proof of domestic or foreign service? | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/faq/what-should-i-do-if-im-having-trouble-submitting-my-gold-card-application/": {
+    "content_hash": "9f161fc7840fe68dfbba87fe82d16a317eb974cf3c8143222b5f0a9d88603a22",
+    "last_crawled": "2026-04-25T13:56:27.029912+00:00",
+    "last_modified": "2026-04-25T13:54:57.548848+00:00",
+    "status": "active",
+    "title": "What should I do if I'm having trouble submitting my Gold \u2026 | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/gold-card-office/": {
+    "content_hash": "71b680016cdc53447b911d98bcb8fc0dbc6cb7151dfb158f2ddace8be22ba809",
+    "last_crawled": "2026-04-25T13:56:27.020667+00:00",
+    "last_modified": "2026-04-25T13:54:37.991372+00:00",
+    "status": "active",
+    "title": "Gold Card Office | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/help-desk/": {
+    "content_hash": "bfd3d77a847e864270e700e4df8db1d5187cc9c1506e379c112e6a74fee669bd",
+    "last_crawled": "2026-04-25T13:56:27.028753+00:00",
+    "last_modified": "2026-04-25T13:54:54.892698+00:00",
+    "status": "active",
+    "title": "Help Desk | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/news/ndc-special-case-review/": {
+    "content_hash": "996de71c72e8f4c319c2d6651a273154c1d83de49cc97310fff5dda50ae98870",
+    "last_crawled": "2026-04-25T13:56:27.024794+00:00",
+    "last_modified": "2026-04-25T13:54:45.671650+00:00",
+    "status": "active",
+    "title": "NDC Special Case Review | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/": {
+    "content_hash": "73556dd9479a9b67f33302d79ab96e567440fb93b5005eea0ef606474f7249e4",
+    "last_crawled": "2026-04-25T13:56:27.025273+00:00",
+    "last_modified": "2026-04-25T13:54:46.881369+00:00",
+    "status": "active",
+    "title": "Qualifications | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-architecture/": {
+    "content_hash": "6932bae30601962fd376566193b22837abefc2c1f2d0c51ba97cfbe3533a262c",
+    "last_crawled": "2026-04-25T13:56:27.020916+00:00",
+    "last_modified": "2026-04-25T13:54:38.411227+00:00",
+    "status": "active",
+    "title": "Field of Architecture | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-biotechnology": {
+    "content_hash": "febbbe11d30cacced99bc12abfbb919abb3a2609e36189be05bdb16d79c557ba",
+    "last_crawled": "2026-04-25T13:56:27.024291+00:00",
+    "last_modified": "2026-04-25T13:54:44.761159+00:00",
+    "status": "active",
+    "title": "Field of Biotechnology | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-biotechnology/": {
+    "content_hash": "febbbe11d30cacced99bc12abfbb919abb3a2609e36189be05bdb16d79c557ba",
+    "last_crawled": "2026-04-25T13:56:27.023507+00:00",
+    "last_modified": "2026-04-25T13:54:43.031591+00:00",
+    "status": "active",
+    "title": "Field of Biotechnology | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-culture-and-arts/": {
+    "content_hash": "f1ad2d4720567f58fe35d3c1003f1ff2c6c9bf6f87ef11cfae8b0adff362c5ff",
+    "last_crawled": "2026-04-25T13:56:27.021395+00:00",
+    "last_modified": "2026-04-25T13:54:38.963458+00:00",
+    "status": "active",
+    "title": "Field of Culture and Arts | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-digital": {
+    "content_hash": "3f8ea8f186f8a6e8f231a0e1c8201f92167340695b39537ec1eed04cff7b5c9c",
+    "last_crawled": "2026-04-25T13:56:27.024113+00:00",
+    "last_modified": "2026-04-25T13:54:44.366233+00:00",
+    "status": "active",
+    "title": "Field of Digital | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-digital/": {
+    "content_hash": "3f8ea8f186f8a6e8f231a0e1c8201f92167340695b39537ec1eed04cff7b5c9c",
+    "last_crawled": "2026-04-25T13:56:27.021695+00:00",
+    "last_modified": "2026-04-25T13:54:39.376260+00:00",
+    "status": "active",
+    "title": "Field of Digital | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-economy/": {
+    "content_hash": "8bf9a3bfa5198c0c383cd01900b88f54c563909db9dd7c53ac18c87718df3de8",
+    "last_crawled": "2026-04-25T13:56:27.021982+00:00",
+    "last_modified": "2026-04-25T13:54:39.825549+00:00",
+    "status": "active",
+    "title": "Field of Economy | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-education/": {
+    "content_hash": "69b058734ae752cb692af031d6adc13854107fe4f19b66b3fecf15654f033dc6",
+    "last_crawled": "2026-04-25T13:56:27.022201+00:00",
+    "last_modified": "2026-04-25T13:54:40.230577+00:00",
+    "status": "active",
+    "title": "Field of Education | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-environmental": {
+    "content_hash": "e35f3b7f05edc5c3ba0a47fa3572dd635b67def61a1641ab09bf866254750ff2",
+    "last_crawled": "2026-04-25T13:56:27.024584+00:00",
+    "last_modified": "2026-04-25T13:54:45.295702+00:00",
+    "status": "active",
+    "title": "Field of Environment | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-environmental/": {
+    "content_hash": "e35f3b7f05edc5c3ba0a47fa3572dd635b67def61a1641ab09bf866254750ff2",
+    "last_crawled": "2026-04-25T13:56:27.023749+00:00",
+    "last_modified": "2026-04-25T13:54:43.480774+00:00",
+    "status": "active",
+    "title": "Field of Environment | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-finance/": {
+    "content_hash": "70a53b58692a89b7c5dd03df3fab0b503f0e58139258ee1ba54af1b9099c75af",
+    "last_crawled": "2026-04-25T13:56:27.022420+00:00",
+    "last_modified": "2026-04-25T13:54:40.684745+00:00",
+    "status": "active",
+    "title": "Field of Finance | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-law/": {
+    "content_hash": "3003df98bff49aa99d73bd87035a52afd4bc9a88fbbf957456d92e7cb00e1fe2",
+    "last_crawled": "2026-04-25T13:56:27.023080+00:00",
+    "last_modified": "2026-04-25T13:54:42.007824+00:00",
+    "status": "active",
+    "title": "Field of Law | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-national-defense/": {
+    "content_hash": "d99527a619f7460ea205c9a08ed790e597223e6f24867ae3a21b6cf2a2271be1",
+    "last_crawled": "2026-04-25T13:56:27.022597+00:00",
+    "last_modified": "2026-04-25T13:54:41.086385+00:00",
+    "status": "active",
+    "title": "Field of National Defense | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-science-technology/": {
+    "content_hash": "c9d5fe90ef32d8392ac2c11f4e0daf0bee85c1571dcd1b500fa4ef338c444d0c",
+    "last_crawled": "2026-04-25T13:56:27.022896+00:00",
+    "last_modified": "2026-04-25T13:54:41.600484+00:00",
+    "status": "active",
+    "title": "Field of Science & Technology | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/qualification/field-of-sport/": {
+    "content_hash": "990980d82b32d583629d6fb7ac5126632bd31fb2356d3f3c46f08fb16513df31",
+    "last_crawled": "2026-04-25T13:56:27.023243+00:00",
+    "last_modified": "2026-04-25T13:54:42.505612+00:00",
+    "status": "active",
+    "title": "Field of Sports | Taiwan Gold Card"
+  },
+  "https://goldcard.nat.gov.tw/en/tags/application/": {
+    "content_hash": "24365bc2acc18e1b823e097918449b8cefb02a8951b594b5628966387ddf8690",
+    "last_crawled": "2026-04-25T13:56:27.028332+00:00",
+    "last_modified": "2026-04-25T13:54:54.059384+00:00",
+    "status": "active",
+    "title": "Application | Taiwan Gold Card"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/faq/how-do-i-fill-in-my-residence-address/",
+  "title": "How do I fill in my residence address? | Taiwan Gold Card",
+  "content_hash": "3f90497d4810b703d1e99dad66e56a0fa78152d7ee58041cfef6612d83a7fdc9",
+  "crawled_at": "2026-04-25T13:56:17.803393+00:00",
+  "content": "How do I fill in my residence address?\nPlease select the city and district from the drop-down menu, and type in the rest of your address in Chinese in the final blank space (do not type in the city and district).\nPlease refer to the photo below.\nback"
+}

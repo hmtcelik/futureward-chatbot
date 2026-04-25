@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/faq/if-i-cannot-personally-pick-up-my-gold-card-can-i-ask-someone-to-pick-it-up-for-me/",
+  "title": "If I cannot personally pick up my Gold Card, can I ask … | Taiwan Gold Card",
+  "content_hash": "f0d0e379aae41f2ef4c243cca74654deb280fee7cf4ec59a9921b8b5fd6e8bb6",
+  "crawled_at": "2026-04-25T13:56:26.842901+00:00",
+  "content": "If I cannot personally pick up my Gold Card, can I ask someone to pick it up for me?\nYou must have entered Taiwan if you want someone to pick up your Gold Card for you. They will have to bring the following to pick up your card:\nTheir ID/ARC\nYour Application Receipt\nYour Resident Authorization Certificate\nYour Original Passport\nAn Affidavit written by you stating that you have authorized this person to pick up your Gold Card for you.\nNote: You must present your Resident Authorization Certificate when entering Taiwan. If someone else is picking up your card on your behalf, they will need to bring it with them. However, if you applied domestically and have someone else pick up your Gold Card, it is not required.\nPlease refer to the below instructions to download your application receipt and resident authorization certificate.\nShould you have any concerns about pickup process, please contact your local\nNational Immigration Agency’s service center\n.\nback"
+}

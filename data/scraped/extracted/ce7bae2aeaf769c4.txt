@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/faq/what-is-proof-of-domestic-or-foreign-service/",
+  "title": "What is proof of domestic or foreign service? | Taiwan Gold Card",
+  "content_hash": "599d4ec1cf813152da3ad2c5e3d9bfae66532fa6ba4469b6d60552b3884758c1",
+  "crawled_at": "2026-04-25T13:55:55.826582+00:00",
+  "content": "What is proof of domestic or foreign service?\nIt is a Certificate of Employment (or Proof of Resignation) with your full name, company’s name, position, actual duration of employment, and company’s stamp, seal, or signature. You may refer to the samples below.\nPlease note: the company name on your Certificate of Employment (or Proof of Resignation) must be consistent with the company name on your Tax Return. If you are a freelance worker or self-employed business owners, you may provide your own proof of service stating your job type, who you worked for, and when you worked.\nProof of Service.pdf\nback"
+}

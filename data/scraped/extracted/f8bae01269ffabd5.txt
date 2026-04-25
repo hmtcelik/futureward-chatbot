@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/faq/do-hong-kong-and-macao-applicants-need-to-attach-any-additional-documents/",
+  "title": "Do Hong Kong and Macau applicants need to attach any … | Taiwan Gold Card",
+  "content_hash": "7009ed9f15e32ad9cdbbc975b58d45544e30ee71f5480566c40a7976d48520ff",
+  "crawled_at": "2026-04-25T13:56:19.008041+00:00",
+  "content": "Do Hong Kong and Macau applicants need to attach any additional documents?\nHong Kong and Macau applicants must download the “Hong Kong or Macau Resident Confirmation Document (香港或澳門居民身分確認書)” and the “Residence Declaration Form for Hong Kong and Macau Residents (香港澳門居民申請居留定居申報書)”. Signatures must be in Chinese.\nPlease refer to the links to download the necessary documents:\n香港或澳門居民身分確認書\n、\n香港澳門居民申請居留定居申報書\nIf you have previously worked for a company or government agency in mainland China, it is recommended to provide a statement detailing your past work experiences and future plans in Taiwan.\nback"
+}

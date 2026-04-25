@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/qualification/",
+  "title": "Qualifications | Taiwan Gold Card",
+  "content_hash": "73556dd9479a9b67f33302d79ab96e567440fb93b5005eea0ef606474f7249e4",
+  "crawled_at": "2026-04-25T13:55:57.789865+00:00",
+  "content": "Please read the criteria for each relevant field carefully, as you may qualify under more than one field. However, aside from the Field of Architecture, an application must be submitted under only\nONE\nfield and\nONE\nregulation. In most cases, applicants must also choose a specific entry under the regulation as well.\nIn order to validate your qualifications, you will need to provide supporting documentation. Please match your supporting documentation as closely as possible with your field and regulation to ensure a speedy application.\nTry the\nGold Card Qualification Check\nto see which criteria you can consider in your application.\nField of Architecture\nField of Biotechnology\nField of Culture and Arts\nField of Digital\nField of Economy\nField of Education\nField of Environment\nField of Finance\nField of Law\nField of National Defense\nField of Science & Technology\nField of Sports"
+}

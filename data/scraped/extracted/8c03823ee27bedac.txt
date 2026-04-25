@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/gold-card-office/",
+  "title": "Gold Card Office | Taiwan Gold Card",
+  "content_hash": "71b680016cdc53447b911d98bcb8fc0dbc6cb7151dfb158f2ddace8be22ba809",
+  "crawled_at": "2026-04-25T13:55:37.819786+00:00",
+  "content": "About the Gold Card Office\n“Taiwan Employment Gold Card Office” was created in October 2020 by the National Development Council, to serve as a single point of contact for the recruitment and assistance of foreign professionals working in Taiwan, under the Act for the Recruitment and Employment of Foreign Professionals.\nOur Services:\nSingle point of contact for questions about the program and its application process (email, phone, office hours).\nCreation and maintenance of the official Gold Card website\nRecruitment of global talents and potential applicants\nInternational marketing and promotion\nOrganization of Gold Card community events"
+}

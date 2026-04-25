@@ -1,0 +1,14 @@
+streamlit
+google-genai
+chromadb
+beautifulsoup4
+httpx
+pydantic
+pydantic-settings
+structlog
+python-dotenv
+tenacity
+tiktoken
+pytest
+pytest-asyncio
+ruff

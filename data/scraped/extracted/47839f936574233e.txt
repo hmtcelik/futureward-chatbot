@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/help-desk/",
+  "title": "Help Desk | Taiwan Gold Card",
+  "content_hash": "bfd3d77a847e864270e700e4df8db1d5187cc9c1506e379c112e6a74fee669bd",
+  "crawled_at": "2026-04-25T13:56:14.805518+00:00",
+  "content": "Taiwan Gold Card Help Desk\nThe Taiwan Gold Card Office operates a bilingual helpdesk for applicants and current cardholders.\nIf you have any questions, concerns, and suggestions, please don’t hesitate to e-mail us at:\nhelp@taiwangoldcard.tw\nFor any questions related to the Gold Card or your move to Taiwan.\nPhone Service Time:\nMonday-Friday 09:00-12:00；13:00-18:00 (GMT+8)\n+886 2-7733-7660\nOffice Hours: (Please make an appointment by email.)\nWED. 14:00-17:00\nTHU. 14:00-17:00\nLatest news\nApril 17th 2026\n2026/FEB Cumulative Number of Employment Gold Card Issuance\nAt February 28, 2026, “8,372” cards are valid. From February 8, 2018 to February 28, 2026, …\nFebruary 23th 2026\n2026/JAN Cumulative Number of Employment Gold Card Issuance\nAt January 31, 2026, “8,318” cards are valid. From February 8, 2018 to January 31, 2026, …\nJanuary 20th 2026\n2025/DEC Cumulative Number of Employment Gold Card Issuance\nAt December 31, 2025, “8,184” cards are valid. From February 8, 2018 to December 31, 2025, …"
+}
