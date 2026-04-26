@@ -227,7 +227,7 @@ PAGE = f"""
 <div class="eyebrow reveal d0">SKILL TEST · TALENT TAIWAN · APRIL 2026</div>
 <h1 class="hero reveal d1">Building a <em>guarded</em> RAG for a<br>government chatbot.</h1>
 <p class="subtitle reveal d2">Talent Taiwan currently runs Chatbase on Gemini 3 Flash and is dealing with hallucinations, off-topic drift, and manual content sync. This demo shows what a custom architecture buys, side by side with the baseline.</p>
-<div class="meta reveal d3">By Hamit Çelik <span style="color:#444;margin:0 0.5rem">·</span> Submission for Jerry @ Talent Taiwan</div>
+<div class="meta reveal d3">By Hamit Çelik <span style="color:#444;margin:0 0.5rem">·</span> Submission for Talent Taiwan</div>
 
 <hr class="rule tight reveal d4">
 

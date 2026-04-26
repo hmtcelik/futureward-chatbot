@@ -3,7 +3,7 @@
 Production-grade reference architecture for a government regulatory chatbot.
 Built as a skill-test deliverable for [Talent Taiwan](https://talent.nat.gov.tw/).
 
-**Live demo:** _set after Streamlit Cloud deploy_
+**Live demo:** [talent-taiwan-rag.streamlit.app](https://talent-taiwan-rag.streamlit.app/)
 
 ## What this is
 
@@ -29,8 +29,8 @@ Both run on Gemini 3 Flash. The architecture is the only variable.
 ## Local setup
 
 ```bash
-git clone https://github.com/USERNAME/talent-taiwan-demo.git
-cd talent-taiwan-demo
+git clone https://github.com/hmtcelik/futureward-chatbot.git
+cd futureward-chatbot
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

@@ -1,7 +1,8 @@
 # Implementation Decisions
 
-Running log of choices made during build that diverge from `CLAUDE.md` or are
-not derivable from the code. Material for the PDF write-up.
+Running log of build choices not derivable from the code itself: model
+selection, threshold tuning, baseline calibration, pipeline parallelization.
+Useful as design rationale for any future maintainer.
 
 ## Models
 

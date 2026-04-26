@@ -25,3 +25,6 @@ data/scraped/raw_html/
 
 # Streamlit runtime — actual secrets live in the Cloud dashboard.
 .streamlit/secrets.toml
+
+# Internal build spec — not for public repo.
+CLAUDE.md
