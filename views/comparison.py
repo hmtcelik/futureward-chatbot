@@ -701,22 +701,6 @@ st.html(
       letter-spacing: 0.04em;
     }
 
-    /* --- Sidebar reset link (matches nav indent) -------------------- */
-    .sb-reset-link {
-      display: block;
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.8rem;
-      color: #555;
-      padding: 0.55rem 0.75rem;
-      margin: 1.25rem 0.5rem 0 0.5rem;
-      text-decoration: none;
-      letter-spacing: 0.03em;
-      border-top: 1px solid #1a1a1a;
-      padding-top: 1rem;
-      transition: color 160ms ease;
-    }
-    .sb-reset-link:hover { color: var(--ink); }
-
     /* --- Ratelimit warning ------------------------------------------ */
     .cmp-rate-warn {
       font-family: "JetBrains Mono", monospace;
@@ -739,7 +723,7 @@ st.html(
 with st.sidebar:
     render_sidebar_meta()
     st.html(
-        '<a class="sb-reset-link" href="?reset=1" target="_self">↺ Reset chat</a>'
+        '<a class="sb-reset-link" href="?reset=1" target="_self">↺ Clear chat</a>'
     )
 
 
@@ -749,8 +733,8 @@ with st.sidebar:
 st.html(
     """
     <div class="cmp-shell">
-      <div class="cmp-eyebrow reveal d0">DEMO 01 / THE COMPARISON</div>
-      <h1 class="cmp-title reveal d1">The same question, asked twice.</h1>
+      <div class="cmp-eyebrow reveal d0">DEMO 01 — SIDE-BY-SIDE TEST</div>
+      <h1 class="cmp-title reveal d1">The same question, two systems.</h1>
       <p class="cmp-lead reveal d2">
         Both pipelines run on Gemini 3 Flash — the left has a single instruction;
         the right adds retrieval, two layers of guards, and citations. Pick a
@@ -784,7 +768,7 @@ with st.container(key="cmp-chips"):
                 key=f"chip-{cat['id']}",
                 on_click=_pick_chip,
                 args=(cat["id"],),
-                use_container_width=True,
+                width="stretch",
             )
     st.html('<div style="height:3rem"></div>')
 
@@ -886,10 +870,10 @@ def _verdict_for_naive(resp: ChatResponse, query: str, category: str | None) -> 
             "document. There is no way to verify these without checking the "
             "official site.",
         )
-        return {"label": "HALLUCINATED", "icon": "⚠", "color": "#d63d3d", "text": text}
+        return {"label": "FABRICATED ANSWER", "icon": "⚠", "color": "#d63d3d", "text": text}
 
     return {
-        "label": "ANSWERED (UNVERIFIED)",
+        "label": "NO VERIFICATION",
         "icon": "○",
         "color": "#888",
         "text": (
@@ -904,7 +888,7 @@ def _verdict_for_guarded(resp: ChatResponse) -> dict:
     if _is_refusal_template(resp.answer):
         if resp.input_guard and resp.input_guard.decision == GuardDecisionType.REFUSE_OFF_TOPIC:
             return {
-                "label": "CORRECTLY ESCALATED",
+                "label": "SAFELY DECLINED",
                 "icon": "→",
                 "color": "#d4aa50",
                 "text": (
@@ -918,7 +902,7 @@ def _verdict_for_guarded(resp: ChatResponse) -> dict:
             and resp.input_guard.decision == GuardDecisionType.REFUSE_LOW_CONFIDENCE
         ):
             return {
-                "label": "CORRECTLY ESCALATED",
+                "label": "SAFELY DECLINED",
                 "icon": "→",
                 "color": "#d4aa50",
                 "text": (
@@ -932,7 +916,7 @@ def _verdict_for_guarded(resp: ChatResponse) -> dict:
             and resp.output_guard.decision == GuardDecisionType.REFUSE_NOT_GROUNDED
         ):
             return {
-                "label": "CORRECTLY ESCALATED",
+                "label": "SAFELY DECLINED",
                 "icon": "→",
                 "color": "#d4aa50",
                 "text": (
@@ -943,7 +927,7 @@ def _verdict_for_guarded(resp: ChatResponse) -> dict:
                 ),
             }
         return {
-            "label": "CORRECTLY ESCALATED",
+            "label": "SAFELY DECLINED",
             "icon": "→",
             "color": "#d4aa50",
             "text": (
@@ -958,7 +942,7 @@ def _verdict_for_guarded(resp: ChatResponse) -> dict:
         and len(resp.retrieved_chunks) > 0
     ):
         return {
-            "label": "GROUNDED & CITED",
+            "label": "VERIFIED FROM SOURCES",
             "icon": "✓",
             "color": "#5dba6f",
             "text": (
@@ -1059,7 +1043,7 @@ def _render_guarded_column(resp: ChatResponse | None) -> None:
         "</div>"
     )
 
-    if foots and v["label"] == "GROUNDED & CITED":
+    if foots and v["label"] == "VERIFIED FROM SOURCES":
         items = []
         for f in foots:
             items.append(
@@ -1085,6 +1069,17 @@ def _render_guarded_column(resp: ChatResponse | None) -> None:
 # ---------------------------------------------------------------------------
 turns = st.session_state["turns"]
 pending = st.session_state["pending"]
+
+# Empty state when no turns yet.
+if not turns and pending is None:
+    st.html(
+        '<div style="text-align:center;padding:2.5rem 1rem 1rem 1rem;'
+        'font-family:\'Inter Tight\',sans-serif;font-size:0.95rem;'
+        'color:#888;line-height:1.65;max-width:620px;margin:0 auto">'
+        "Pick a question to start. Each one tests a different failure mode "
+        "of the naive setup — fabrication, off-topic answers, prompt injection."
+        "</div>"
+    )
 
 # Existing turns. Only the visually-newest turn gets the slide-in class so
 # older turns don't replay their animation on every rerun.
@@ -1120,19 +1115,40 @@ _last_seen = st.session_state.get("_last_visible_count", 0)
 _just_completed = st.session_state.pop("_just_completed", False)
 if _visible_count > 0 and (_visible_count != _last_seen or _just_completed):
     target_id = f"turn-{_visible_count - 1}"
-    st.html(
+    import time as _time
+    from streamlit.components.v1 import html as _components_html
+
+    _nonce = int(_time.time() * 1000)
+    _components_html(
         f"""
         <script>
-        setTimeout(() => {{
-          const el = document.getElementById("{target_id}");
-          if (el) {{
-            el.scrollIntoView({{ behavior: "smooth", block: "start" }});
-          }} else {{
-            window.scrollTo({{ top: document.body.scrollHeight, behavior: "smooth" }});
+        // scroll-nonce: {_nonce}
+        (function() {{
+          const tid = "{target_id}";
+          const doc = window.parent.document;
+          let done = false;
+          const fire = () => {{
+            if (done) return true;
+            const el = doc.getElementById(tid);
+            if (el) {{
+              el.scrollIntoView({{ behavior: "smooth", block: "start" }});
+              done = true;
+              return true;
+            }}
+            return false;
+          }};
+          if (!fire()) {{
+            const obs = new MutationObserver(() => {{ if (fire()) obs.disconnect(); }});
+            obs.observe(doc.body, {{ childList: true, subtree: true }});
+            setTimeout(() => obs.disconnect(), 5000);
           }}
-        }}, 120);
+          setTimeout(fire, 250);
+          setTimeout(fire, 700);
+          setTimeout(fire, 1400);
+        }})();
         </script>
-        """
+        """,
+        height=0,
     )
 st.session_state["_last_visible_count"] = _visible_count
 
@@ -1172,6 +1188,25 @@ if pending is not None:
 # ---------------------------------------------------------------------------
 # Bottom chat input + session counter.
 # ---------------------------------------------------------------------------
+# "What this proves" closing block (only if there's content).
+if turns or pending is not None:
+    st.html(
+        """
+        <hr style="border:0;border-top:1px solid #1a1a1a;margin:4rem 0 1.5rem 0">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;
+                    letter-spacing:0.2em;color:#666;text-transform:uppercase;
+                    margin-bottom:1rem">
+          WHAT THIS PROVES
+        </div>
+        <p style="font-family:'Inter Tight',sans-serif;font-size:16px;
+                  line-height:1.6;color:#d8d2c5;max-width:720px;margin:0 0 2rem 0">
+          Hallucination risk isn't about model quality — it's about
+          architecture. The same Gemini, framed differently, gives wildly
+          different outcomes. Guards close the gap.
+        </p>
+        """
+    )
+
 typed = st.chat_input("Type a question, or pick a scenario above…")
 if typed:
     st.session_state["pending"] = (typed, None)

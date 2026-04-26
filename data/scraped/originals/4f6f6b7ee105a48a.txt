@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/faq/how-do-i-change-to-another-field/",
+  "title": "How do I change to another Field? | Taiwan Gold Card",
+  "content_hash": "d1d16439140dc0136b13573426f4a1229793628535755ad0441db7db0dede5fd",
+  "crawled_at": "2026-04-25T13:56:24.827299+00:00",
+  "content": "How do I change to another Field?\nIf the relevant authority reviewing your application finds that your documents are insufficient, they will return your application and request additional documents. At this time, you can choose to submit additional documents or to change to another Field.\nSteps: Case Status Check → The List of Supplemental Documents → View → Modify → Profession\nNote:\nIf you switch to a new Field or Regulation, or there are new requirements for the Field of the previous application, the platform will not be able to transfer your documents from your previous application.\nPlease review in detail the regulations in each of the Fields and pay attention in particular to the notes on the required documents.\nPlease note that if the relevant authority believes that your chances of approval are low, they may reject your application rather than return it.\nback"
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/apply/",
+  "title": "Application Guide | Taiwan Gold Card",
+  "content_hash": "85a9d0f3de12078bf06a8b872ac1b80765ad6ec85a9a3da4b5750d3b632f663c",
+  "crawled_at": "2026-04-25T13:56:11.814644+00:00",
+  "content": "Application Guide\nFollow the process step-by-step.\nWe’re excited to have you. The process to apply is not complicated, and we’ll lead you through it. First, click/tap “Start” to determine how you may qualify. Application Website:\nForeign Professionals Online Application Platform\nRegarding qualification, professionals from nine different industries are eligible to apply for the Gold Card program. However, note that you may only apply under one field.\nIf you prefer to read the full detailed application instructions in one page, please go\nHERE\n.\nStep 1 - Qualification Quick Check\nDetermine how you may qualify\nStep 2 - Online Application\nAre you ready to apply? Make sure you follow the steps!\nStep 3 - After Application\nWhat happens after you submit.\nStart\nStep 1 - Qualification Quick Check\nCheck list\nUse your personal check list to make it easier for you to remember if you have completed all steps of the application process.\nStep 1 - Qualification Quick Check\nStep 2 - Online Application\nStep 3 - After Application"
+}

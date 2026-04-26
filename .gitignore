@@ -1,5 +1,8 @@
 .env
 .env.local
+.env.*
+!.env.example
+
 *.pyc
 __pycache__/
 .pytest_cache/
@@ -8,14 +11,17 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+
 .venv/
 venv/
+
 .idea/
 .vscode/
 .DS_Store
+*.log
 
-# Raw HTML is large + reproducible; keep extracted text + manifest committed.
+# Raw HTML is large + reproducible; keep extracted text + chroma_db committed.
 data/scraped/raw_html/
 
-# Streamlit runtime
+# Streamlit runtime — actual secrets live in the Cloud dashboard.
 .streamlit/secrets.toml

@@ -80,6 +80,16 @@ class TokenUsage(BaseModel):
     estimated_cost_usd: float
 
 
+class StageTimings(BaseModel):
+    """Wall-clock latency per pipeline stage. ``None`` means stage skipped."""
+
+    input_guard_ms: int | None = None
+    embedding_ms: int | None = None
+    retrieval_ms: int | None = None
+    generation_ms: int | None = None
+    output_guard_ms: int | None = None
+
+
 class ChatResponse(BaseModel):
     """Full response object returned by either chatbot variant."""
 
@@ -91,6 +101,16 @@ class ChatResponse(BaseModel):
     latency_ms: int
     correlation_id: str
     chatbot_variant: str  # "naive" | "guarded"
+
+    # Pipeline trace (Inside-the-Pipeline page). All optional; the naive
+    # chatbot leaves them blank, guarded populates as it runs.
+    stage_timings: StageTimings = Field(default_factory=StageTimings)
+    embedding_dimensions: int | None = None
+    embedding_input_tokens: int | None = None
+    embedding_preview: list[float] = Field(default_factory=list)
+    similarity_threshold: float | None = None
+    system_prompt_used: str | None = None
+    suppressed_answer: str | None = None  # populated when output guard refuses
 
 
 class EvalQuestion(BaseModel):

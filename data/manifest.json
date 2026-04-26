@@ -1,8 +1,8 @@
 {
   "https://goldcard.nat.gov.tw/en/": {
     "content_hash": "556d1a65955e84735282b858fdf070c81a425b92fa7bd6f7edb4524326a15a89",
-    "last_crawled": "2026-04-25T13:56:27.020162+00:00",
-    "last_modified": "2026-04-25T13:54:37.190709+00:00",
+    "last_crawled": "2026-04-26T01:45:49.626000+00:00",
+    "last_modified": "2026-04-26T01:45:49.626000+00:00",
     "status": "active",
     "title": "Official Website | Taiwan Gold Card"
   },
@@ -64,7 +64,7 @@
   },
   "https://goldcard.nat.gov.tw/en/apply/step-2/registration/": {
     "content_hash": "6991a9db3cd60ccf2056c604cb379acc634332eadc12d1e7083fdf4de9b0f9e1",
-    "last_crawled": "2026-04-25T13:56:27.025600+00:00",
+    "last_crawled": "2026-04-26T00:09:57.366078+00:00",
     "last_modified": "2026-04-25T13:54:47.750686+00:00",
     "status": "active",
     "title": "Registration | Taiwan Gold Card"
@@ -309,7 +309,7 @@
   },
   "https://goldcard.nat.gov.tw/en/qualification/field-of-finance/": {
     "content_hash": "70a53b58692a89b7c5dd03df3fab0b503f0e58139258ee1ba54af1b9099c75af",
-    "last_crawled": "2026-04-25T13:56:27.022420+00:00",
+    "last_crawled": "2026-04-25T23:48:36.921064+00:00",
     "last_modified": "2026-04-25T13:54:40.684745+00:00",
     "status": "active",
     "title": "Field of Finance | Taiwan Gold Card"

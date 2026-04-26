@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/faq/do-i-need-to-provide-a-letter-of-guarantee-to-apply-for-the-gold-card/",
+  "title": "Do I need to provide a Letter of Guarantee to apply for the … | Taiwan Gold Card",
+  "content_hash": "293108b98a37a03c8683574199000bc14a45e121390cb25bd4a3990be0ad9625",
+  "crawled_at": "2026-04-25T13:56:21.825962+00:00",
+  "content": "Do I need to provide a Letter of Guarantee to apply for the Gold Card?\nGold Card applicants from\nthese designated countries\nwill be asked by the overseas missions of the R.O.C. to provide\nLetter of Guarantee for Visa Application to the Republic of China\n.\nLetter of Guarantee for Visa Application to the Republic of China.pdf\nback"
+}

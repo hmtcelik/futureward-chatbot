@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/faq/how-long-does-the-application-take/",
+  "title": "How long does the application take? | Taiwan Gold Card",
+  "content_hash": "1e34ae5a70f315c6df46c3e8754205cc69fdf1e2e038183bf7ecd0e7629765ae",
+  "crawled_at": "2026-04-25T13:56:13.804539+00:00",
+  "content": "How long does the application take?\nThe timeline for issuing the Employment Gold Card is as follows:\nInformation Check: The National Immigration Agency confirms your basic details (1-2 weeks).\nQualification Check: Various relevant ministries review your application (1-2 months). If you are asked to provide Supplementary Documents, it will take longer.\nPassport Inspection: For overseas applicants, your local Taiwan embassy will inspect your passport (1 week). For domestic applicants, this step shall be skipped.\nSecondary Review: The National Immigration Agency (NIA) performs a final review of your application and prints your Gold Card (1-2 weeks). However, if you have worked for any Mainland Chinese companies or the government, please expect at least 1-2 months for the National Immigration Agency’s final review.\nback"
+}

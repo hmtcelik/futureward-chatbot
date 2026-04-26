@@ -1,0 +1,7 @@
+{
+  "url": "https://goldcard.nat.gov.tw/en/apply/step-1/",
+  "title": "Step 1 - Qualification Quick Check | Taiwan Gold Card",
+  "content_hash": "e5ceb5ccc79ee8987a7f488b89f32d1becaccde6f958a35b1ecff02ad54bdcae",
+  "crawled_at": "2026-04-25T13:55:50.806660+00:00",
+  "content": "Step 1 - Qualification Quick Check\nDetermine how you may qualify\nThis tool is an aid to allow you to more easily navigate the various qualifications for the Gold Card.\nIt may be ambiguous or omit certain details in the interest of brevity.\nOnly the full text of the regulations can be used to determine if you qualify, so please refer to the\ndetailed version\nbefore making your decision.\nCheck list\nUse your personal check list to make it easier for you to remember if you have completed all steps of the application process.\nStep 2 - Online Application\nRegistration\nNew Applicant\nBasic Data\nResident\nProfession\nUpload Document\nPayment and E-Mail Confirmation\nStep 3 - After Application\nSupplementary Documents\nPassport Inspection\nCard Collection\nWelcome to the Community"
+}

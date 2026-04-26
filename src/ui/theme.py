@@ -147,6 +147,22 @@ section[data-testid="stSidebar"] [data-testid="stIconMaterial"] {
   font-size: 1rem !important;
 }
 
+/* Sidebar reset-chat link — same on every page. */
+.sb-reset-link {
+  display: block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  color: #9ecbff;
+  padding: 0.55rem 0.75rem;
+  margin: 1.25rem 0.5rem 0 0.5rem;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  border-top: 1px solid #1a1a1a;
+  padding-top: 1rem;
+  transition: color 160ms ease;
+}
+.sb-reset-link:hover { color: #cfe6ff; }
+
 /* Sidebar footer eyebrow + meta block. */
 .sidebar-eyebrow {
   font-family: "JetBrains Mono", monospace;

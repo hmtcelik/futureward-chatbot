@@ -42,6 +42,7 @@ from src.models import (
     GuardDecision,
     GuardDecisionType,
     RetrievedChunk,
+    StageTimings,
     TokenUsage,
 )
 from src.rag.embedder import Embedder
@@ -111,15 +112,19 @@ class GuardedChatbot:
         started: float,
         usage_baseline: TokenUsage,
     ) -> ChatResponse:
-        # Stage 1: input guard + embedding in parallel.
-        # Embedding wasted when input refuses (~$0.00001) — worth it to cut
-        # ~2.5s off the worst-case happy-path latency.
+        # --- Stage 1+2: input guard + embedding in parallel --------------
+        embed_started = time.perf_counter()
         input_task = asyncio.create_task(check_on_topic(query, client=self.client))
         embed_task = asyncio.create_task(
             self.retriever.embedder.embed([query], task_type="RETRIEVAL_QUERY")
         )
         input_decision, embed_result = await asyncio.gather(input_task, embed_task)
-        query_vectors, _embed_usage = embed_result  # cost tracked via client.cumulative_usage
+        embedding_ms = int((time.perf_counter() - embed_started) * 1000)
+        query_vectors, embed_usage = embed_result
+        embedding_dimensions = len(query_vectors[0]) if query_vectors else 0
+        embedding_preview = (
+            [round(float(v), 4) for v in query_vectors[0][:8]] if query_vectors else []
+        )
 
         log.info(
             "input_guard_decision",
@@ -134,10 +139,18 @@ class GuardedChatbot:
                 started=started,
                 input_decision=input_decision,
                 usage_baseline=usage_baseline,
+                stage_timings=StageTimings(
+                    input_guard_ms=input_decision.latency_ms,
+                    embedding_ms=embedding_ms,
+                ),
+                embedding_dimensions=embedding_dimensions,
+                embedding_input_tokens=embed_usage.prompt_tokens,
+                embedding_preview=embedding_preview,
                 log=log,
             )
 
-        # Stage 2: vector store query (cheap, sync inside the lib).
+        # --- Stage 3: vector store query --------------------------------
+        retrieval_started = time.perf_counter()
         if not query_vectors or self.retriever.store.count() == 0:
             log.warning("retrieval_no_vectors_or_empty_store")
             chunks: list[RetrievedChunk] = []
@@ -162,6 +175,7 @@ class GuardedChatbot:
                         rank=rank,
                     )
                 )
+        retrieval_ms = int((time.perf_counter() - retrieval_started) * 1000)
 
         top_score = chunks[0].similarity_score if chunks else 0.0
         log.info("retrieval_complete", results=len(chunks), top_score=top_score)
@@ -173,13 +187,19 @@ class GuardedChatbot:
                 input_decision=input_decision,
                 top_score=top_score,
                 usage_baseline=usage_baseline,
+                stage_timings=StageTimings(
+                    input_guard_ms=input_decision.latency_ms,
+                    embedding_ms=embedding_ms,
+                    retrieval_ms=retrieval_ms,
+                ),
+                embedding_dimensions=embedding_dimensions,
+                embedding_input_tokens=embed_usage.prompt_tokens,
+                embedding_preview=embedding_preview,
                 log=log,
             )
 
-        # Stage 3: generation with retrieved context (streaming, accumulated).
+        # --- Stage 4: generation ----------------------------------------
         contents = build_contents(history, query)
-        # Inject the context block by appending a system-style message at the
-        # end of the user turn — easier than reshaping ``contents``.
         context_block = _format_context(chunks)
         gen_prompt_text = f"{context_block}\n\nUser question: {query}"
         contents[-1].parts[0].text = gen_prompt_text
@@ -194,18 +214,18 @@ class GuardedChatbot:
                 accumulated_text += chunk_evt.text
             if chunk_evt.is_final and chunk_evt.usage is not None:
                 gen_usage = chunk_evt.usage
-        gen_latency_ms = int((time.perf_counter() - gen_started) * 1000)
+        generation_ms = int((time.perf_counter() - gen_started) * 1000)
         if gen_usage is None:
             gen_usage = _zero_usage()
         log.info(
             "generation_complete",
-            latency_ms=gen_latency_ms,
+            latency_ms=generation_ms,
             prompt_tokens=gen_usage.prompt_tokens,
             completion_tokens=gen_usage.completion_tokens,
             answer_chars=len(accumulated_text),
         )
 
-        # Stage 4: output guard.
+        # --- Stage 5: output guard --------------------------------------
         output_decision = await check_grounded(
             accumulated_text, chunks, client=self.client
         )
@@ -217,6 +237,7 @@ class GuardedChatbot:
         )
 
         final_answer = accumulated_text
+        suppressed_answer: str | None = None
         decision_path = "answer"
         if output_decision.decision == GuardDecisionType.REFUSE_NOT_GROUNDED:
             log.warning(
@@ -224,13 +245,11 @@ class GuardedChatbot:
                 original_answer=accumulated_text[:500],
                 reason=output_decision.reason,
             )
+            suppressed_answer = accumulated_text
             final_answer = NOT_GROUNDED_RESPONSE
             decision_path = "not_grounded"
 
         latency_ms = int((time.perf_counter() - started) * 1000)
-        # Per-call usage (input_guard + embedding + main gen + output_guard)
-        # is the diff between current cumulative usage and the snapshot we
-        # took at chat() entry. Single source of truth = the GeminiClient.
         total_usage = _diff_usage(usage_baseline, self.client.cumulative_usage)
         log.info(
             "chat_response",
@@ -248,6 +267,19 @@ class GuardedChatbot:
             latency_ms=latency_ms,
             correlation_id=cid,
             chatbot_variant=self.variant,
+            stage_timings=StageTimings(
+                input_guard_ms=input_decision.latency_ms,
+                embedding_ms=embedding_ms,
+                retrieval_ms=retrieval_ms,
+                generation_ms=generation_ms,
+                output_guard_ms=output_decision.latency_ms,
+            ),
+            embedding_dimensions=embedding_dimensions,
+            embedding_input_tokens=embed_usage.prompt_tokens,
+            embedding_preview=embedding_preview,
+            similarity_threshold=settings.similarity_threshold,
+            system_prompt_used=SYSTEM_PROMPT_GUARDED,
+            suppressed_answer=suppressed_answer,
         )
 
     def _respond_refusal(
@@ -256,11 +288,13 @@ class GuardedChatbot:
         started: float,
         input_decision: GuardDecision,
         usage_baseline: TokenUsage,
+        stage_timings: StageTimings,
+        embedding_dimensions: int,
+        embedding_input_tokens: int,
+        embedding_preview: list[float],
         log,
     ) -> ChatResponse:
         latency_ms = int((time.perf_counter() - started) * 1000)
-        # Embedding ran in parallel and is now wasted; include its cost in
-        # total_usage for honest cost accounting but discard the chunks.
         total_usage = _diff_usage(usage_baseline, self.client.cumulative_usage)
         log.info(
             "chat_response",
@@ -278,6 +312,11 @@ class GuardedChatbot:
             latency_ms=latency_ms,
             correlation_id=cid,
             chatbot_variant=self.variant,
+            stage_timings=stage_timings,
+            embedding_dimensions=embedding_dimensions,
+            embedding_input_tokens=embedding_input_tokens,
+            embedding_preview=embedding_preview,
+            similarity_threshold=settings.similarity_threshold,
         )
 
     def _respond_low_confidence(
@@ -287,6 +326,10 @@ class GuardedChatbot:
         input_decision: GuardDecision,
         top_score: float,
         usage_baseline: TokenUsage,
+        stage_timings: StageTimings,
+        embedding_dimensions: int,
+        embedding_input_tokens: int,
+        embedding_preview: list[float],
         log,
     ) -> ChatResponse:
         latency_ms = int((time.perf_counter() - started) * 1000)
@@ -314,15 +357,17 @@ class GuardedChatbot:
         return ChatResponse(
             answer=LOW_CONFIDENCE_RESPONSE,
             retrieved_chunks=[],
-            # The actual input guard decision was PASS — surface the synthetic
-            # low-confidence signal in the same slot for UI display, and
-            # preserve the real input decision in metadata.
             input_guard=synthetic,
             output_guard=None,
             token_usage=total_usage,
             latency_ms=latency_ms,
             correlation_id=cid,
             chatbot_variant=self.variant,
+            stage_timings=stage_timings,
+            embedding_dimensions=embedding_dimensions,
+            embedding_input_tokens=embedding_input_tokens,
+            embedding_preview=embedding_preview,
+            similarity_threshold=settings.similarity_threshold,
         )
 
 

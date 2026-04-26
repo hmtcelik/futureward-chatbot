@@ -87,6 +87,17 @@ embedder, both guards, and the answer model. Token usage for a chat turn is
 computed as the diff between `client.cumulative_usage` at chat entry and at
 exit — single source of truth, no double-counting, no per-stage estimation.
 
+## Inside-the-Pipeline Page = Task 3 Evidence
+
+The Inside-the-Pipeline subpage is the single best evidence on the demo for
+three Task 3 (Quality Oversight) standards: prompt versioning (the actual
+`SYSTEM_PROMPT_GUARDED` string is rendered inline in the inspector for every
+response, copyable verbatim), correlation IDs (every response carries a
+UUID that all log lines for the request share — visible at the bottom of
+each turn with a one-click copy button), and eval-suite hooks (the
+threshold-coloured retrieval scores in the inspector use the same 0.55 trust
+floor that gates production answers and that the eval set scores against).
+
 ## Naive Baseline Calibration
 
 Initial Phase 4 testing revealed that even `SYSTEM_PROMPT_NAIVE` ("You are a
